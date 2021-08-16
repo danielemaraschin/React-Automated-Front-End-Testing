@@ -9,7 +9,6 @@ const conecta = (uri, options = {}) => {
       return dados;
     }
 
-    
     console.log(resposta)
     throw new Error(resposta);
   })
