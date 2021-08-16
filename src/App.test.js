@@ -8,3 +8,8 @@ describe('Component principal', () => {
         expect(screen.getByText('ByteBank')).toBeInTheDocument();
     })
 })
+
+it('Mostrar saldo', () => {
+    render(<App />);
+    expect(screen.getByText('Saldo:')).toBeInTheDocument();
+})
