@@ -30,7 +30,7 @@ describe('Component principal', () => {
             }
             const saldoInicial = 150
             const novoSaldo = calcularNovoSaldo(valores, saldoInicial)
-            expect(novoSaldo).toBe(100)
+            expect(novoSaldo).toBe(6)
         });
     })
 })
