@@ -1,6 +1,6 @@
 {
   "conta": {
-    "saldo": 1090
+    "saldo": 1189
   },
   "transacoes": [
     {
@@ -44,6 +44,18 @@
       "valor": 0,
       "data": "16/08/2021",
       "id": 7
+    },
+    {
+      "transacao": "saque",
+      "valor": 0,
+      "data": "17/08/2021",
+      "id": 8
+    },
+    {
+      "transacao": "deposito",
+      "valor": "99",
+      "data": "17/08/2021",
+      "id": 9
     }
   ]
 }
