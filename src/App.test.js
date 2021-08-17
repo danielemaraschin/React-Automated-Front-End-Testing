@@ -23,8 +23,13 @@ describe('Component principal', () => {
     })
 
     describe('Quando eu realizo uma transição', () => {
-        it('que é um saque, o valor vai aumentar', () => {
-            const novoSaldo = calcularNovoSaldo(valores, saldo)
+        it('que é um saque, o valor vai diminuir', () => {
+            const valores = {
+                transacao: 'saque',
+                valor: 50
+            }
+            const saldoInicial = 150
+            const novoSaldo = calcularNovoSaldo(valores, saldoInicial)
             expect(novoSaldo).toBe(100)
         });
     })
