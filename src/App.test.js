@@ -35,11 +35,11 @@ describe('Component principal', () => {
         it('que é um depóstio, o valor vai aumentar', () => {
             const valores = {
                 transacao: 'deposito',
-                valor: 50
+                valor: 200
             }
             const saldoInicial = 150
             const novoSaldo = calcularNovoSaldo(valores, saldoInicial)
-            expect(novoSaldo).toBe(200)
+            expect(novoSaldo).toBe(350)
         });
     })
 })
