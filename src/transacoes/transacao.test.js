@@ -13,6 +13,8 @@ describe('Componente de Transação no extrarto', () => {
             expect().toMatchSnapshot();
             });
 })
-    //container é uma const que o render nos dá
+//sempre c    
+//container é uma const que o render nos dá
  //o firstchild do container será o elemento HTML já montado  
 //ele tem outros elelmentos tb, mas nao usaremos agora
+//comitar o arquivo de snapshots para que o servidor consiga fazer a comparação
