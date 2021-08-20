@@ -1,6 +1,6 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App, { calcularNovoSaldo} from './App'
+import { getAllByLabelText, getByTestId, getByText, render, screen } from '@testing-library/react';
+import App, { calcularNovoSaldo } from './App'
 describe('Component principal', () => {
     describe('Quando eu abro a app do banco,', () => {
 
@@ -32,6 +32,25 @@ describe('Component principal', () => {
             const novoSaldo = calcularNovoSaldo(valores, saldoInicial)
             expect(novoSaldo).toBe(100)
         });
+
+        it('que é um saque, a transação deve ser realizada', () => {
+            {
+                const {
+                    getByText, 
+                    getByTestId,
+                    getByLabelText 
+                } = render(<App />);
+                const saldo = getByText('R$ 1000');
+                const transacao = getByLabelText('Saque');
+                const valor = getByTestId('valor');
+                const botaoTransacao = getByText('Realizar operação');
+                expect(saldo.textContent).toBe('R$ 10')
+                expect().toBe()
+            }
+           
+        });
+
+
         it('que é um depóstio, o valor vai aumentar', () => {
             const valores = {
                 transacao: 'deposito',
