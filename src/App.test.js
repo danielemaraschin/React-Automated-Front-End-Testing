@@ -1,5 +1,5 @@
 import React from 'react';
-import { getAllByLabelText, getByTestId, getByText, render, screen } from '@testing-library/react';
+import { fireEvent, getAllByLabelText, getByTestId, getByText, render, screen } from '@testing-library/react';
 import App, { calcularNovoSaldo } from './App'
 describe('Component principal', () => {
     describe('Quando eu abro a app do banco,', () => {
@@ -34,31 +34,23 @@ describe('Component principal', () => {
         });
 
         it('que é um saque, a transação deve ser realizada', () => {
-            {
-                const {
-                    getByText, 
-                    getByTestId,
-                    getByLabelText 
-                } = render(<App />);
-                const saldo = getByText('R$ 1000');
-                const transacao = getByLabelText('Saque');
-                const valor = getByTestId('valor');
-                const botaoTransacao = getByText('Realizar operação');
-                expect(saldo.textContent).toBe('R$ 10')
-                expect().toBe()
-            }
-           
-        });
+            const {
+                getByText,
+                getByTestId,
+                getByLabelText
+            } = render(<App />);
+            const saldo = getByText('R$ 1000');
+            const transacao = getByLabelText('Saque');
+            const valor = getByTestId('valor');
+            const botaoTransacao = getByText('Realizar operação');
+            expect(saldo.textContent).toBe('R$ 1000')
 
+            fireEvent.click(transacao, { target: { value: 'saque' } });
+            fireEvent.change(valor, { target: { value: 10 }});
+            fireEvent.click(botaoTransacao);
 
-        it('que é um depóstio, o valor vai aumentar', () => {
-            const valores = {
-                transacao: 'deposito',
-                valor: 200
-            }
-            const saldoInicial = 150
-            const novoSaldo = calcularNovoSaldo(valores, saldoInicial)
-            expect(novoSaldo).toBe(350)
-        });
-    })
+            expect(saldo.textContent).toBe('R$ 990');
+        })
+    }
+    )
 })

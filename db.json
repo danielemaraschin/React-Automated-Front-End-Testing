@@ -56,6 +56,42 @@
       "valor": "99",
       "data": "17/08/2021",
       "id": 9
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "8/20/2021",
+      "id": 10
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "8/20/2021",
+      "id": 11
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "8/20/2021",
+      "id": 12
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "8/20/2021",
+      "id": 13
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "8/20/2021",
+      "id": 14
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "8/20/2021",
+      "id": 15
     }
   ]
 }
