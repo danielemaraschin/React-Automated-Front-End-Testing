@@ -49,7 +49,7 @@ describe('Component principal', () => {
             fireEvent.change(valor, { target: { value: 10 }});
             fireEvent.click(botaoTransacao);
 
-            expect(saldo.textContent).toBe('R$ 900');
+            expect(saldo.textContent).toBe('R$ 990');
         })
     }
     )
