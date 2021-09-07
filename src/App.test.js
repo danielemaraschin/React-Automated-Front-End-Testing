@@ -32,7 +32,7 @@ describe('Component principal', () => {
             const novoSaldo = calcularNovoSaldo(valores, saldoInicial)
             expect(novoSaldo).toBe(100)
         });
-
+        
         it('que é um saque, a transação deve ser realizada', () => {
             const {
                 getByText,
