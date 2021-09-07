@@ -11,8 +11,8 @@ describe('Componente de Transação no extrato', () => {
                 valor="20.00"
             />);
 
-            expect().toMatchSnapshot();
-        });
+            expect(container.firstChild).toMatchSnapshot();
+        })
 });
 //sempre c    
 //container é uma const que o render nos dá
