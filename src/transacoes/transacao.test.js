@@ -8,11 +8,12 @@ describe('Componente de Transação no extrato', () => {
             const { container} = render(<Transacao //FAZ DESTRUCTURING  DO RENDER
                 data="08/09/2020"
                 tipo="saque"
-                valor="20.00" />);
+                valor="20.00"
+            />);
 
             expect().toMatchSnapshot();
-            });
-})
+        });
+});
 //sempre c    
 //container é uma const que o render nos dá
  //o firstchild do container será o elemento HTML já montado  
