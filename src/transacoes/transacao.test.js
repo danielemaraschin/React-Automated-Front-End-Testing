@@ -2,10 +2,10 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Transacao from './Transacao';
 
-describe('Componente de Transação no extrarto', () => {
+describe('Componente de Transação no extrato', () => {
     
-        it(' o snapshot do componente deve ser sempre o mesmo ', () => {
-            const { container} = render(<Transacao
+        it('O snapshot do componente deve ser sempre o mesmo ', () => {
+            const { container} = render(<Transacao //FAZ DESTRUCTURING  DO RENDER
                 data="08/09/2020"
                 tipo="saque"
                 valor="20.00" />);
