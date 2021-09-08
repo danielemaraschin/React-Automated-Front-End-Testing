@@ -39,14 +39,14 @@ describe('Component principal', () => {
                 getByTestId,
                 getByLabelText
             } = render(<App />);
-            const saldo = getByText('R$ 1000');
-            const transacao = getByLabelText('Saque');
+            const saldo = getByText('R$ 1000'); //R$:1000 is default value, when starting the app
+            const transacao = getByLabelText('Saque'); //label Html element
             const valor = getByTestId('valor');
             const botaoTransacao = getByText('Realizar operação');
             expect(saldo.textContent).toBe('R$ 1000')
-
+            //fireEvent is a function from React Test Library to fake a DOM function
             fireEvent.click(transacao, { target: { value: 'saque' } });
-            fireEvent.change(valor, { target: { value: 10 }});
+            fireEvent.change(valor, { target: { value: 10 }}); //.change para fazer mudanca de valor no input
             fireEvent.click(botaoTransacao);
 
             expect(saldo.textContent).toBe('R$ 990');
@@ -54,3 +54,4 @@ describe('Component principal', () => {
     }
     )
 })
+
