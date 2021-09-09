@@ -34,15 +34,12 @@ describe('Component principal', () => {
         });
         
         it('que é um saque, a transação deve ser realizada', () => {
-            const {
-                getByText,
-                getByTestId,
-                getByLabelText
-            } = render(<App />);
-            const saldo = getByText('R$ 1000'); //R$:1000 is default value, when starting the app
-            const transacao = getByLabelText('Saque'); //label Html element
-            const valor = getByTestId('valor');
-            const botaoTransacao = getByText('Realizar operação');
+            render(<App />);
+
+            const saldo = screen.getByText('R$ 1000'); //R$:1000 is default value, when starting the app
+            const transacao = screen.getByLabelText('Saque'); //label Html element
+            const valor = screen.getByTestId('valor');
+            const botaoTransacao = screen.getByText('Realizar operação');
             expect(saldo.textContent).toBe('R$ 1000')
             //fireEvent is a function from React Test Library to fake a DOM function
             fireEvent.click(transacao, { target: { value: 'saque' } });
