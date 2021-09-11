@@ -10,7 +10,7 @@ jest.mock('./api') //simulamos o caminho desse modulo p/ nao chamar o que ta no 
 
 describe('Requisções para a API ', () => {
     it('Exibir lista de transações através da API', () => {
-        api.listaTransacoes.mockResolvedValue = [
+        api.listaTransacoes.mockResolvedValue([
             {
                 "valor": 10,
                 "transacao": "saque",
@@ -23,7 +23,7 @@ describe('Requisções para a API ', () => {
                 "data": "26/09/2020",
                 "id": 2
             },
-        ];
+        ]);
         render (<App/>);
 
     
