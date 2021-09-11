@@ -1,6 +1,6 @@
 {
   "conta": {
-    "saldo": 990
+    "saldo": 1000
   },
   "transacoes": [
     {
@@ -344,6 +344,84 @@
       "valor": "10",
       "data": "9/10/2021",
       "id": 57
+    },
+    {
+      "transacao": "deposito",
+      "valor": "10",
+      "data": "11/09/2021",
+      "id": 58
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 59
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 60
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 61
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 62
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 63
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 64
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 65
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 66
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 67
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 68
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 69
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/11/2021",
+      "id": 70
     }
   ]
 }
