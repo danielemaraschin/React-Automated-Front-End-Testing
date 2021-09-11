@@ -6,9 +6,11 @@ import React from 'react';
 import { render, screen} from "@testing-library/react";
 import App from './App'
 
+jest.mock('./api') //simulamos o caminho desse modulo p/ nao chamar o que ta no caminho da api de verdade;
+
 describe('Requisções para a API ', () => {
     it('Exibir lista de transações através da API', () => {
-        api.listaTransacoes = [
+        api.listaTransacoes.mockResolvedValue = [
             {
                 "valor": 10,
                 "transacao": "saque",
