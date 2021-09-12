@@ -9,7 +9,7 @@ import App from './App'
 jest.mock('./api') //simulamos o caminho desse modulo p/ nao chamar o que ta no caminho da api de verdade;
 
 describe('Requisções para a API ', () => {
-    it('Exibir lista de transações através da API', () => {
+    it('Exibir lista de transações através da API', async () => {
         api.listaTransacoes.mockResolvedValue([
             {
                 "valor": 10,
