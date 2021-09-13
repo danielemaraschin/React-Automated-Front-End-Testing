@@ -12,7 +12,7 @@ describe('Requisções para a API ', () => {
     it('Exibir lista de transações através da API', async () => {
         api.listaTransacoes.mockResolvedValue([
             {
-                "valor": 10,
+                "valor": "10",
                 "transacao": "saque",
                 "data": "10/08/2020",
                 "id": 1
@@ -25,7 +25,9 @@ describe('Requisções para a API ', () => {
            }
         ]);
         render (<App/>);
-    
+//findBy é uma query do React Testing Library que vai retornar para nós uma promise e essa promise vai ser concluída quando ele tiver o resultado desse mocking, por exemplo.
+//podemos usar o screen pq é uma query que estamos fazendo dentro do componente renderizado 
+        await screen.findByText('saque')
         expect(screen.getByTestId('transacoes').children.length).toBe(2)
     })
 });
