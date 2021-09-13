@@ -422,6 +422,30 @@
       "valor": "10",
       "data": "9/11/2021",
       "id": 70
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/13/2021",
+      "id": 71
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/13/2021",
+      "id": 72
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/13/2021",
+      "id": 73
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "9/13/2021",
+      "id": 74
     }
   ]
 }

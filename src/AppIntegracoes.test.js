@@ -22,12 +22,11 @@ describe('Requisções para a API ', () => {
                 "valor": "20",
                 "data": "26/09/2020",
                 "id": 2
-            },
+           }
         ]);
         render (<App/>);
-
     
-    expect(screen.getBytestId('transacoes').children.length).toBe(2)
+        expect(screen.getByTestId('transacoes').children.length).toBe(2)
     })
 });
 
