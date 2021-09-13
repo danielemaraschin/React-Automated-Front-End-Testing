@@ -27,7 +27,7 @@ describe('Requisções para a API ', () => {
         render (<App/>);
 //findBy é uma query do React Testing Library que vai retornar para nós uma promise e essa promise vai ser concluída quando ele tiver o resultado desse mocking, por exemplo.
 //podemos usar o screen pq é uma query que estamos fazendo dentro do componente renderizado 
-        await screen.findByText('saque')
+        expect(await screen.findByText('saque')).toBeInTheDocument();
         expect(screen.getByTestId('transacoes').children.length).toBe(2)
     })
 });
