@@ -18,7 +18,7 @@ describe('Componente Conta', () =>{
     render(<Conta saldo={1000} realizarTransacao= {funcaoRealizarTransacao} />) 
     //nao é relevante para esse teste o saldo, entao podemos passar um valor qualquer
     
-    fireEvent.click(screen.getByText('Realizar operação'));
+   // fireEvent.click(screen.getByText('Realizar operação'));
     //teoricamente o teste nao deveria ter passado, ja q nao cliquei no botao antes de 
     //realizar o teste, mas no da prof nao passou entao add fireEvent.click,
     //no meu seguiu passando, da prof passou agora so c/o 
